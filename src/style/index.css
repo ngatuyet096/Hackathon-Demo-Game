@@ -66,6 +66,24 @@ html {
   cursor: pointer;
   border: 1px solid #bfbfbf;
   opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.map .game.done {
+  background: #aba7a7;
+  opacity: 1;
+  cursor: auto;
+}
+.map .game.done i {
+  color: #00fe00;
+}
+.map .game.shop {
+  background: gray;
+  color: white;
+  left: 40%;
+  top: 19%;
+  opacity: 1;
 }
 .map .game.stage1 {
   bottom: 16%;
@@ -86,8 +104,4 @@ html {
 .map .game.stage5 {
   top: 28%;
   right: 19%;
-}
-.map .game.stage6 {
-  top: 12%;
-  left: 27%;
 }/*# sourceMappingURL=index.css.map */
