@@ -1,3 +1,8 @@
+body,
+html {
+  height: 100%;
+}
+
 .introduce {
   background-image: url("../../assest/images/love.jpeg");
   width: 100%;
@@ -35,15 +40,54 @@
 .map {
   background-image: url("../../assest/images/saleh-ahmed-grnislandmap-allb.jpg");
   width: 100%;
-  height: 100vh;
-  background-position: center center;
+  height: 150%;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
+  .avatar {
+    background: url("../../assest/images/download.jpeg");
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50px;
+    left: 18%;
+  }
   .game {
+    position: absolute;
     width: 40px;
     height: 40px;
     background: #3c3530;
     border-radius: 50%;
     cursor: pointer;
     border: 1px solid #bfbfbf;
+    opacity: 0.8;
+    &.stage1 {
+      bottom: 16%;
+      left: 33%;
+    }
+    &.stage2 {
+      bottom: 28%;
+      left: 74%;
+    }
+    &.stage3 {
+      bottom: 43%;
+      left: 30%;
+    }
+    &.stage4 {
+      bottom: 67%;
+      left: 45%;
+    }
+    &.stage5 {
+      top: 28%;
+      right: 19%;
+    }
+    &.stage6 {
+      top: 12%;
+      left: 27%;
+    }
   }
 }
