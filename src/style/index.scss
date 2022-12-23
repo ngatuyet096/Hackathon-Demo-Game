@@ -65,6 +65,24 @@ html {
     cursor: pointer;
     border: 1px solid #bfbfbf;
     opacity: 0.8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.done {
+      background: #aba7a7;
+      opacity: 1;
+      cursor: auto;
+      i {
+        color: #00fe00;
+      }
+    }
+    &.shop {
+      background: gray;
+      color: white;
+      left: 40%;
+      top: 19%;
+      opacity: 1;
+    }
     &.stage1 {
       bottom: 16%;
       left: 33%;
@@ -84,10 +102,6 @@ html {
     &.stage5 {
       top: 28%;
       right: 19%;
-    }
-    &.stage6 {
-      top: 12%;
-      left: 27%;
     }
   }
 }
